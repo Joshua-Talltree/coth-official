@@ -1,17 +1,27 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import {createRoot} from 'react-dom/client';
+import HomePage from './components/home/HomePage';
+import AboutPage from './components/about/AboutPage';
+import LivePage from './components/live/LivePage';
+import SermonsPage from './components/sermons/SermonsPage';
+import {BrowserRouter, Route, Routes} from "react-router-dom";
+import COTH from "./components/coth/COTH";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+const Index = () => (
+    <BrowserRouter>
+        <COTH>
+            <Routes>
+                <Route exact path="/" component={HomePage}/>
+                <Route path="/about" component={AboutPage}/>
+                <Route path="/live" component={LivePage}/>
+                <Route path="/sermons" exact component={SermonsPage}/>
+            </Routes>
+        </COTH>
+    </BrowserRouter>
+)
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+const container = document.getElementById('root')
+const root = createRoot(container);
+
+root.render(<Index tab="home-page"/>)
