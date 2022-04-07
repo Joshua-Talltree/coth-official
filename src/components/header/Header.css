@@ -1,0 +1,47 @@
+.coth-navbar {
+    background-color: rgba(0, 0, 0, 0.03) !important;
+    padding: 20px 45px !important;
+}
+
+@media(min-width: 992px) {
+    .coth-navbar{
+        padding: 20px 100px !important;
+    }
+}
+
+.coth-navbar-logo {
+    width:auto;
+    height:40px;
+}
+
+@media(min-width: 330px) {
+    .sbc-navbar-logo {
+        width:auto;
+        height:45px;
+    }
+}
+
+@media(min-width: 992px) {
+    .coth-navbar-logo {
+        width:auto;
+        height:60px;
+    }
+}
+
+.coth-navbar-collapse {
+    align-self: flex-end;
+}
+
+.nav-item {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.nav-link.active {
+    border-bottom: 1px solid #0d98ba;
+}
+
+.nav-link {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+}

@@ -60,7 +60,7 @@ class Header extends React.Component {
                             <NavLink to="/giving" className="nav-link" activeClassName="active" onClick={this.navLinkClick}>Giving</NavLink>
                         </li>
                         <li className="nav-item">
-                            <NavLink to="/word-of-the-week" className="nav-link" activeClassName="active" onClick={this.navLinkClick}>Word Of The Day</NavLink>
+                            <NavLink to="/word-of-the-week" className="nav-link" activeClassName="active" onClick={this.navLinkClick}>Word Of The Week</NavLink>
                         </li>
                     </ul>
                 </div>

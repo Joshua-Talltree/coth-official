@@ -5,7 +5,7 @@ import './Footer.css'
 const Footer = (props) => {
 
     return (
-        <div className="footer">
+        <div className="footer card-footer fixed-bottom">
             <div className="footer-links">
                 <Link to="about">About</Link><span className="footer-link-slash">/</span>
                 <a href="/" target="_blank">Bulletin</a><span className="footer-link-slash">/</span>
@@ -20,16 +20,18 @@ const Footer = (props) => {
                 <div className="col-sm">
                     <p className="footer-social-title">STAY CONNECTED</p>
                     <div className="footer-social-links">
-                        <a href="https://www.facebook.com/churchonthehillhondo78861/"><i className="fab fa-facebook-f"></i></a>
+                        <a href="https://www.facebook.com/churchonthehillhondo78861/" target="_blank"><i className="fab fa-facebook-f"></i></a>
                         <a href="/"><i className="fab fa-twitter"></i></a>
                     </div>
                 </div>
                 <div className="col-sm d-none d-sm-none d-md-none d-lg-block">
-                    <img alt="footer-logo" srcSet="img/logo_footer@2x.png 2x" className="footer-logo float-right" src="img/logo_footer.png"/>
+                    <img alt="footer-logo" srcSet="" className="footer-logo float-right" src=""/>
                 </div>
             </div>
         </div>
     )
 };
+
+
 
 export default Footer;
