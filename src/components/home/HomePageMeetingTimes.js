@@ -1,7 +1,6 @@
 import React from 'react';
 import './HomePageMeetingTimes.css';
 
-
 const HomePageMeetingTimes = (props) => {
 
     return (
