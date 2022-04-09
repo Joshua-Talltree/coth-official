@@ -24,7 +24,7 @@ function App() {
                         <Route path="/sermons" element={<SermonsPage/>} exact/>
                         <Route path="/sermons/series/:title" element={<SermonSeriesPage/>}/>
                         <Route path="/sermons/:sermonId/:title" element={<SermonsPage/>}/>
-                        <Route path="/contact" element={<ContactPage/>}/>
+                        <Route path="/contact" element={<ContactPage/>} exact/>
                         <Route path="/giving" element={<GivingPage/>}/>
                         <Route path="/word-for-the-week" element={<WordForTheWeekPage/>} exact />
                     </Routes>
