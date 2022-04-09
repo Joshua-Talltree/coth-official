@@ -5,7 +5,7 @@ import './Footer.css'
 const Footer = (props) => {
 
     return (
-        <div className="footer card-footer fixed-bottom">
+        <div className="footer fixed-bottom">
             <div className="footer-links">
                 <Link to="about">About</Link><span className="footer-link-slash">/</span>
                 <a href="/" target="_blank">Bulletin</a><span className="footer-link-slash">/</span>
