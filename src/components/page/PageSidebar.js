@@ -15,8 +15,8 @@ class PageSidebar extends React.Component {
 
     getCurrentSection = (props) => {
         let currentSection = 0;
-        for(var i = 0; i < props.children.length; i++) {
-            if(props.location.pathname === props.children[i].props.url) {
+        for(let i = 0; i < props.children.length; i++) {
+            if(props.pathname === props.children[i].props.url) {
                 currentSection = i;
                 break;
             }
@@ -46,7 +46,7 @@ class PageSidebar extends React.Component {
         const bannerImageUrl = newSection.props.bannerImageUrl
         const bannerMobilePosition = newSection.props.bannerMobilePosition
 
-        this.props.history.push(newSection.props.url);
+        // this.props.history.push(newSection.props.url);
         this.props.onSectionChange(bannerImageUrl, title.toUpperCase(), bannerMobilePosition)
     }
 

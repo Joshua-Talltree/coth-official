@@ -7,7 +7,7 @@ import './ContactPage.css'
 const ContactPage = (props) => {
     return (
         <Page>
-            <Map fullWidth={true}/>
+            {/*<Map fullWidth={true}/>*/}
             <div className="contact-page">
                 <br/>
                 <p>

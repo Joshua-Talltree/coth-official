@@ -23,7 +23,7 @@ const PageBanner = (props) => {
     }
 
     return (
-        <div className={"page-banner " + className} style={style}>
+        <div className={"page-banner" + className} style={style}>
             <Helmet>
                 <meta property="og:image" content={`http://saintfieldbaptist.org.uk${props.imageUrl}`}/>
                 <meta itemprop="thumbnailUrl" content={`http://saintfieldbaptist.org.uk${props.imageUrl}`}/>
